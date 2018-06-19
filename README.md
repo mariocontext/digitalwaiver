@@ -1,6 +1,6 @@
 # Designer Prototyping Tool
 
-> Nuxt.js project
+> Nuxt.js project - applied to FX Digital Waiver
 
 ## Purpose
 

@@ -1,8 +1,8 @@
 {
-  "name": "mybueproto",
+  "name": "fxwdigitalavier",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "Mario Noble <mario@contextmultimedia.com>",
+  "description": "FX digital waiver",
+  "author": "Mario Noble <mario.noble@dws.la>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
