@@ -5,22 +5,18 @@
         <nav class="navbar main-navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
 
-              <span class="page-title">Page Title</span>
-
               <div class="navbar-menu" v-bind:class="{ 'is-active': menuActive }">
                 <span class="navbar-start">
                   <router-link class="navbar-item" lang="en" to="/">Home</router-link>
-                  <router-link class="navbar-item" lang="en" to="/services">Services</router-link>
-                  <router-link class="navbar-item" lang="en" to="/faq">FAQ</router-link>
-                  <router-link class="navbar-item" lang="en" to="/about">About</router-link>
-                  <router-link class="navbar-item" lang="en" to="/contact">Contact</router-link>
+                  <router-link class="navbar-item" lang="en" to="/eventslist">Events</router-link>
+                  <router-link class="navbar-item" lang="en" to="/event">Event</router-link>
+                  <router-link class="navbar-item" lang="en" to="/">Log Out</router-link>
                 </span>
-                <span class="navbar-end">
-                  <a class="navbar-item" lang="en" href="http://www.facebook.com/" aria-label="Facebook"><b-icon icon="facebook" size="is-small" aria-hidden="true">
-                  </b-icon></a>
-                  <a class="navbar-item" lang="en" href="http://www.twitter.com/" aria-label="Twitter"><b-icon icon="twitter" size="is-small" aria-hidden="true"></b-icon></a>
-                  <a class="navbar-item" lang="en" href="https://www.youtube.com/" aria-label="YouTube"><b-icon icon="youtube-play" size="is-small" aria-hidden="true"></b-icon></a>
-                </span>
+
+              <span class="page-title">
+                <slot>Page Title</slot>
+              </span>
+
               </div>
 
               <a role="button" class="navbar-burger" v-on:click="toggleMenu" v-bind:class="{ 'is-active': menuActive }" aria-label="menu" aria-expanded="false">
@@ -64,8 +60,8 @@
 .main-navbar a {
   transition: all 0.5s ease;
     &:hover {
-      color: #DDD;
-      background-color: #333;
+      color: #FFF;
+      background-color: #FF0100;
   }
 }
 
@@ -88,11 +84,8 @@
 
 }
 
-
-
 nav .navbar-item.nuxt-link-exact-active {
-      color: #333;
-      background-color: #DDD;
+      color: #FFF;
 }
 
 header {
@@ -103,16 +96,15 @@ header {
 }
 
 nav {
-
-  background: #F5F5F5;
   font-size: 1.2rem;
+  background-color: #000;
 
   .navbar-brand {
     margin: 0 auto;
   }
 
   .navbar-item {
-    color: #333;
+    color: #FF0100;
     height: 5rem;
   }
 
@@ -120,7 +112,7 @@ nav {
 
 .navbar-burger {
   /* overrides default navbar burger auto calc to right edge */
-  margin-left: 0;
+  /* margin-left: 0; */
 
   span {
     height: 3px;

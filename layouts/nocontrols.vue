@@ -1,7 +1,6 @@
 <template>
 <!-- each component needs a single containing element and thus using span -->
   <span>
-    <app-header/>
 
     <div class="main-content container is-fluid">
       <main class="columns is-variable is-5">
@@ -13,7 +12,7 @@
       </main>
     </div>
 
-    <app-footer/>
+    <footer>TM & ©2018 FX Networks, LLC. All Rights Reserved.</footer>
     
 </span>
 

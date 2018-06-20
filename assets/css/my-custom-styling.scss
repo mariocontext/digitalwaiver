@@ -1,17 +1,10 @@
 /* Custom Styling for global elements */
 
-/* TYPOGRPAHY */
-
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #FFF;
     font-size: 16px;
-}
-
-p {
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    line-height: 2rem;
 }
 
 h1 {
@@ -51,43 +44,78 @@ h6 {
     font-size: .5rem;
 }
 
-.main-content {
-    a {
+li {
+    font-size: 1.2rem;
+    line-height:3rem;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid #4a4a4a;       
+    padding: 0 .5rem;  
+}
 
-        text-decoration: underline dashed;
-        -webkit-text-underline-position: under;
-        -ms-text-underline-position: below;
-        text-underline-position: under;
-        &:hover {
-            text-decoration: underline solid;
-        }
+li:first-child {
+    border-top: 1px solid #4a4a4a;
+}
+
+li:hover {
+    background-color: #FF0100;
+}
+
+li:hover > a {
+    color:#FFF;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #a3a3a3;
+}
+a:hover {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.container {
+    padding: 1rem 32px 6rem 32px;
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        width: 768px;
     }
-    ul {
-        margin-top: .5rem
-    }
-    li {
-        margin-bottom: .75rem;
-    }
 }
 
-.container.is-fluid {
-    margin-left: 32px;
-    margin-right: 32px;
+.title {
+    color: #FFF;
+    text-transform: uppercase;
 }
 
-.main-content {
-    margin-top: 8rem;
-    margin-bottom: 2rem;
+.logo-container {
+    padding: 1rem 0;
+    
 }
 
-.main-content .section {
-    padding: 2rem 1.5rem;
+/* FX logo */
+.logo {
+    display: block;
+    vertical-align: bottom;
 }
-
-.box {
-    background-color: #DDD;
+.logo.fx {
+    width: 120px;
+    height: 80px;
+    margin: 0 auto;
 }
-
-section.box h2 {
-    margin-top: 1rem;
+.svg svg {
+    display: block;
+}
+.logo polygon {
+    fill: white;
+}
+.svg .sprite {
+    display: none;
+    opacity: 0;
+}
+.sprite {
+    background: url(http://www.fxnetworks.com/img/ie/icon-sprite.png) no-repeat 0 0;
+    display: block;
+    text-indent: -9999px;
 }
