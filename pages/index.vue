@@ -7,27 +7,28 @@
                                     70.135,49.172 77.634,60.832 101.645,60.832 82.159,30.521 "></polygon>
                                 </svg>
     </div>
-      <h1 class="has-text-centered">FX Digital Waiver</h1>
+      <h1 class="has-text-centered">Digital Waiver</h1>
 
-      <section>
-        <h2>Login to FX Waiver</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odit commodi alias, laborum quidem laboriosam earum vero minima perspiciatis aut similique, eius consequuntur praesentium voluptate corporis, excepturi eveniet voluptates consectetur?</p>
-        <router-link lang="en" to="/eventslist">Events</router-link>
+      <section class="login-section">
+        <h2>Login</h2>
+
+        <b-field label="Password">
+            <b-input type="password" value="" maxlength="30"></b-input>
+        </b-field>
+        
+        <router-link class="login-btn button is-large is-outlined" lang="en" to="/eventslist">Login</router-link>
     </section>
+
+    <footer><sub>TM & ©2018 FX Networks, LLC. All Rights Reserved.</sub></footer>
 
   </span>
 </template>
 
 <script>
 
-import IconCta from '~/components/IconCta.vue'
-
 export default {
 
-    layout: 'nocontrols',
-    components: {
-      IconCta
-    }
+    layout: 'nocontrols'
 
 }
 
@@ -35,10 +36,27 @@ export default {
 
 <style lang="scss" scoped>
 
-.logo-area,
-.with-icons,
-.my-centered-item
- {
+.login-section {
+  width: 80vw;
+  margin: 0 auto;
+  @media screen and (min-width: 960px) {
+    width: 600px;
+  }
+}
+
+.login-btn {
+  display: block;
+  margin: 0 auto;
+  width: 50vw;
+
+  @media screen and (min-width: 960px) {
+    width: 300px;
+  }
+
+}
+
+footer {
+  margin-top: 3rem;
   text-align: center;
 }
   

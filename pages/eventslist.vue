@@ -3,9 +3,9 @@
       <h1 class="has-text-centered">Events listing</h1>
       <section>
         <ul>
-          <li><a href="#">Event A</a></li>
-          <li><a href="#">Event B</a></li>
-          <li><a href="#">Event C</a></li>
+          <li><router-link to="/event">Some Event A</router-link></li>
+          <li><router-link to="/event">Some Event B</router-link></li>
+          <li><router-link to="/event">Some Event C</router-link></li>
         </ul>
 
       </section>
@@ -14,18 +14,28 @@
 
 <script>
 
-import IconCta from '~/components/IconCta.vue'
-
-export default {
-
-    components: {
-      IconCta
-    }
-
-}
-
 </script>
 
 <style lang="scss" scoped>
+
+li {
+    font-size: 1.2rem;
+    line-height:3rem;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid #4a4a4a;       
+    padding: 0 .5rem;  
+}
+
+li:first-child {
+    border-top: 1px solid #4a4a4a;
+}
+
+li:hover {
+    background-color: #FF0100;
+}
+
+li:hover > a {
+    color:#FFF;
+}
 
 </style>

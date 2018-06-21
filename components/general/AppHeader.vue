@@ -7,15 +7,10 @@
 
               <div class="navbar-menu" v-bind:class="{ 'is-active': menuActive }">
                 <span class="navbar-start">
-                  <router-link class="navbar-item" lang="en" to="/">Home</router-link>
                   <router-link class="navbar-item" lang="en" to="/eventslist">Events</router-link>
-                  <router-link class="navbar-item" lang="en" to="/event">Event</router-link>
                   <router-link class="navbar-item" lang="en" to="/">Log Out</router-link>
                 </span>
 
-              <span class="page-title">
-                <slot>Page Title</slot>
-              </span>
 
               </div>
 
@@ -59,7 +54,8 @@
 
 .main-navbar a {
   transition: all 0.5s ease;
-    &:hover {
+    &:hover, 
+    &:focus {      
       color: #FFF;
       background-color: #FF0100;
   }
@@ -79,13 +75,16 @@
 
 @media screen and (max-width: 1087px) {
   .navbar-menu.is-active {
-    width: 75%;
+    width: 100%;
   }
 
 }
 
 nav .navbar-item.nuxt-link-exact-active {
-      color: #FFF;
+  color: #FF0100;
+  &:focus {
+  color: #FFF;
+  }
 }
 
 header {

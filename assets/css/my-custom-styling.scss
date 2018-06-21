@@ -3,65 +3,54 @@
 html, body {
     font-family: 'Montserrat', sans-serif;
     background: #000;
-    color: #FFF;
+    color: #a3a3a3;
     font-size: 16px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
 h1 {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
     margin-bottom: .5rem;
-    color: #444;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-top: 3.2rem;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
     margin-bottom: .5rem;
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin-top: 3.2rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
 }
 
 h4 {
-    margin-top: 2.2rem;
+    margin-top: .85rem;
     font-weight: 700;
     font-size: .85rem;
 }
 
 h5 {
-    margin-top: 1.2rem;
+    margin-top: .75rem;
     font-weight: 700;
     font-size: .75rem;
 }
 
 h6 {
-    margin-top: 1rem;
+    margin-top: .75rem;
     font-weight: 700;
     font-size: .5rem;
-}
-
-li {
-    font-size: 1.2rem;
-    line-height:3rem;
-    transition: all 0.5s ease;
-    border-bottom: 1px solid #4a4a4a;       
-    padding: 0 .5rem;  
-}
-
-li:first-child {
-    border-top: 1px solid #4a4a4a;
-}
-
-li:hover {
-    background-color: #FF0100;
-}
-
-li:hover > a {
-    color:#FFF;
 }
 
 a {
@@ -81,6 +70,7 @@ a:hover {
 @media screen and (min-width: 960px) {
     .container {
         width: 768px;
+        max-width: 1024px;
     }
 }
 
@@ -118,4 +108,66 @@ a:hover {
     background: url(http://www.fxnetworks.com/img/ie/icon-sprite.png) no-repeat 0 0;
     display: block;
     text-indent: -9999px;
+}
+
+/* content */
+.main-content {
+    margin-top: 2rem;
+    @media screen and (min-width: 1088px) {
+        margin-top: 5rem;
+    }
+}
+
+.button {
+    border-radius: 0;
+    border-width: 2px;
+    text-transform: capitalize;
+    min-height: 40px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: #494949;
+        color: #FFF;
+    }
+}
+
+.button[disabled] {
+    color: #333;
+    transition: all 0.5s ease;
+    &:hover {
+        color: #FFF;
+    }
+}
+
+.secondary-button {
+    border-color: #333;
+    color: #666;
+}
+
+/* form styling */
+
+label.checkbox, label.radio {
+    color: #a3a3a3;
+    font-weight: 700;
+    &:hover {
+        color: #a3a3a3;
+    }
+}
+
+/* general modal */
+
+.modal {
+    strong, em {
+        color: #a3a3a3;
+    }
+    a {
+        text-decoration: underline;
+    }
+    ul {
+        margin: 1rem 0;
+        list-style: square;
+        list-style-position: inside;
+    }
+    .modal-card {
+        border: 1px solid #494949;
+    }
 }

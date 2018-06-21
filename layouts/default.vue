@@ -3,7 +3,7 @@
   <span>
     <app-header/>
 
-    <div class="main-content container is-fluid">
+    <div class="main-content container">
       <main class="columns is-variable is-5">
 
         <section class="column general-content">
@@ -12,8 +12,6 @@
 
       </main>
     </div>
-
-    <app-footer/>
     
 </span>
 
@@ -22,13 +20,11 @@
 <script>
   
 import AppHeader from '../components/general/AppHeader.vue'
-import AppFooter from '../components/general/AppFooter.vue'
   
 export default {
   
   components: {
-    AppHeader,
-    AppFooter
+    AppHeader
   }
   
 }
