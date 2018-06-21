@@ -11,7 +11,6 @@
                   <router-link class="navbar-item" lang="en" to="/">Log Out</router-link>
                 </span>
 
-
               </div>
 
               <a role="button" class="navbar-burger" v-on:click="toggleMenu" v-bind:class="{ 'is-active': menuActive }" aria-label="menu" aria-expanded="false">
@@ -61,27 +60,17 @@
   }
 }
 
-.page-title {
-
-  order: 1;
-  align-self: center;
-
-  @media screen and (min-width: 1088px) {
-    display: none;
-  }
-
-}
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu.is-active {
     width: 100%;
+    background-color: #000;
   }
 
 }
 
 nav .navbar-item.nuxt-link-exact-active {
-  color: #FF0100;
+  color: #FFF;
   &:focus {
   color: #FFF;
   }
@@ -100,6 +89,10 @@ nav {
 
   .navbar-brand {
     margin: 0 auto;
+    border-bottom:1px solid #a3a3a3;
+    @media screen and (min-width: 1088px) {
+      border-bottom: 0;
+    }
   }
 
   .navbar-item {
@@ -109,9 +102,10 @@ nav {
 
 }
 
+
 .navbar-burger {
   /* overrides default navbar burger auto calc to right edge */
-  /* margin-left: 0; */
+  margin-left: 0;
 
   span {
     height: 3px;

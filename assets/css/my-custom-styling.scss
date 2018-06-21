@@ -112,7 +112,7 @@ a:hover {
 
 /* content */
 .main-content {
-    margin-top: 2rem;
+    margin-top: 3rem;
     @media screen and (min-width: 1088px) {
         margin-top: 5rem;
     }
@@ -170,4 +170,10 @@ label.checkbox, label.radio {
     .modal-card {
         border: 1px solid #494949;
     }
+}
+
+/* misc */
+.designer-notes {
+    font-size: .75rem;
+    padding: .5rem
 }

@@ -7,7 +7,7 @@
     <section class="waiver-tease">
       <h2>FX Release</h2>
         <p>Teaser text of release text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae esse pariatur? Rerum nesciunt aperiam quia doloremque placeat repellat, architecto nobis laborum hic voluptate numquam excepturi. Tempore provident placeat numquam....</p>
-        <button class="button is-outlined" v-on:click="toggleModal">View More</button>
+        <button class="button is-outlined" v-on:click="toggleModal">Read More</button>
 
     </section>
 
@@ -18,7 +18,13 @@
         <div class="modal-card">
           <header class="modal-card-head">
             <p class="modal-card-title">FX Release</p>
-            <button class="delete" aria-label="close" v-on:click="toggleModal"></button>
+            <a aria-label="close" v-on:click="toggleModal">
+              <b-icon
+                  icon="close"
+                  size="is-medium"
+                  >
+              </b-icon>
+            </a>
           </header>
           <section class="modal-card-body">
             <h1>Release Title goes here</h1>
@@ -76,10 +82,10 @@
             <input class="button is-outlined secondary-button" value="Cancel" type="reset"/>
           </div>
           <div class="column is-variable is-half">
-            <router-link class="button is-outlined" to="submitted">I Agree</router-link>
+              <router-link class="button is-outlined" to="submitted">I Agree</router-link>
           </div>
-          
         </div>
+        <div class="designer-notes">Design note: Agree button disabled until all required fields are filled.</div>
         
       </form>
     </section>
@@ -106,7 +112,7 @@ module.exports = {
       danger: function() {
                 this.$snackbar.open({
                     duration: 5000,
-                    message: 'We are having a technical problem submitting',
+                    message: 'Technical or network error message goes here',
                     type: 'is-danger',
                     position: 'is-bottom',
                     actionText: 'Retry',

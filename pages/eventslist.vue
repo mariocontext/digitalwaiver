@@ -8,6 +8,8 @@
           <li><router-link to="/event">Some Event C</router-link></li>
         </ul>
 
+        <div class="designer-notes">Design note: If only one event exists, this list is not shown and the user goes directly to the event page.</div>
+
       </section>
   </span>
 </template>

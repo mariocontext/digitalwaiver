@@ -8,7 +8,7 @@
         <br/>
         <p class="personal-info">Jack Daniels - someone@somesite.com</p>
 
-        <section class="controls columns is-mobile">
+        <section class="controls columns">
           <div class="column is-variable">
             <router-link class="button is-outlined secondary-button" to="/eventslist">Back to Events</router-link>
           </div>
@@ -31,7 +31,10 @@
 
 .controls {
   margin-top: 1rem;
-  text-align: left;
+  justify-content: space-around;
+  display: flex;
+  align-items: stretch;
+  align-content: center;
 }
 
 .personal-info {
